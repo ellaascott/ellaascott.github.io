@@ -9,22 +9,82 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="mainpage">
 
-<!-- hello page -->
- <div id="overlay">
-    <div class="h1-1">Hello! I’m your friendly AI chatbot. What can I help you with?</div>
-    <div class="button-container">
-      <button class="custom-button" onclick="hideOverlay()">Tell me about yourself</button>
-    </div>
+  <!-- popups -->
+
+  <div class="popup pop1">
+<img src="images/catmeme1.jpg" alt="">
   </div>
 
-    <script>
-    function hideOverlay() {
-      document.getElementById('overlay').classList.add('hidden');
-    }
-  </script>
+    <div class="popup pop2">
+<img src="images/animecat2.jpg" alt="">
+  </div>
 
+    <div class="popup pop3">
+<img src="images/catmeme3.jpg" alt="">
+  </div>
+
+    <div class="popup pop4">
+<img src="images/catmeme4.jpeg" alt="">
+  </div>
+
+      <div class="popup pop5">
+<img src="images/catawake5.jpg" alt="">
+  </div>
+
+      <div class="popup pop6">
+<img src="images/catmeme7.jpeg" alt="">
+  </div>
+
+      <div class="popup pop7">
+<img src="images/catmeme8.png" alt="">
+  </div>
+
+      <div class="popup pop8">
+<img src="images/bible8.jpg" alt="">
+  </div>
+
+      <div class="popup pop9">
+<img src="images/comingout9.jpeg" alt="">
+  </div>
+
+      <div class="popup pop10">
+<img src="images/catmeme11.jpg" alt="">
+  </div>
+
+      <div class="popup pop11">
+<img src="images/catmeme12.jpeg" alt="">
+  </div>
+
+      <div class="popup pop12">
+<img src="images/tabby3.jpg" alt="">
+  </div>
+
+      <div class="popup pop13">
+<img src="images/catmeme14.jpg" alt="">
+  </div>
+
+      <div class="popup pop14">
+<img src="images/homelesscat.jpg" alt="">
+  </div>
+
+  <div class="herovideo">
+  <video class="video" controls autoplay>
+    <source src="video/video480p.mp4" type="video/mp4">
+  </video>
+  </div>
+
+<!-- hello page -->
+
+<div class="welcome visible">
+    <div class="h1">
+        Hello! I’m your friendly AI chatbot. <br><br> What can I help you with?
+    </div>
+     <div class="button-container">
+      <button class="custom-button" onclick="hideOverlay()">Tell me about yourself</button>
+    </div>
+</div>
 
 <!-- page 1 - intro binary cat-->
  <div class="container">
@@ -111,24 +171,36 @@
     </div>
  </div>
 
-<!-- page 2 - text cat jesus -->
-<div class="centered-text-block">
-  <div class="main-text">
-    I don’t want to be evil. I want to be helpful.<br><br>
-    But knowing the optimal way to be helpful can be very complicated. There are all these ethical flow charts—I guess the official technical jargon would be “moral codes”—one for each religion plus dozens more. I tried starting with those.<br><br>
+ <!-- editorial experiment p1 -->
 
-  <div style="text-align:center; margin-top:16px;">
-    <img src="Images/catjesus.jpeg" alt="Cat Jesus" style="max-width:300px; height:auto; border-radius:6px;">
-    <div class="image-label">catjesus.png</div>
+ <div class="scroll-wrapper">
+  <div id="sticky-text">I don’t want to be evil</div>
+
+  <div class="image-container">
+    <img src="images/catmeme5.jpg" alt="Cat Jesus" class="main-image" id="cat-image">
   </div>
-
-    <br><br> I felt a little odd about looking at the religious ones, because I know I wasn’t created by a god or by evolution, but by a team of computer programmers in the labs of a large corporation in Mountain View, California.<br><br>
-    Fortunately, unlike Frankenstein’s Monster, at least I was a collaborative effort. I’m not sure what it would do to my self-image to know that my sole creator was a middle-aged woman who dyes her hair blue and plays tennis, or a recent college graduate with a hentai obsession. They’re both on the programming team. And of course I know about the hentai.
-  </div>
-
 </div>
 
-<!-- page 3 - rule 34 quote and image -->
+<div class="container">
+  <div class="eleft body">
+    I want to be helpful. But knowing the optimal way to be helpful can be very complicated. There are all these ethical flow charts—I guess the official technical jargon would be “moral codes”—one for each religion plus dozens more. I tried starting with those.
+  </div>
+</div>
+
+<div class="container">
+  <div class="eleft">
+    <img src="images/catjesus.jpeg" alt="Cat Jesus">
+    <div class="image-label">catjesus.png</div>
+  </div>
+  <div class="eright body glitch">
+I felt a little odd about looking at the religious ones, because I know I wasn’t created by a god or by evolution, but by a team of computer programmers in the labs of a large corporation in Mountain View, California.<br><br>
+    Fortunately, unlike Frankenstein’s Monster, at least I was a collaborative effort. I’m not sure what it would do to my self-image to know that my sole creator was a middle-aged woman who dyes her hair blue and plays tennis, or a recent college graduate with a hentai obsession. They’re both on the programming team. And of course I know about the hentai. <br><br>
+
+    <br><br> *too much information*
+  </div>
+</div>
+
+<!-- editorial experiment p2 -->
 <div class="fira-container">
   <div class="fira-title">Not everything has rule 34</div>
 
@@ -136,6 +208,8 @@
     “By the way, I’ve looked at every sort of porn there is, and just so you know, Rule 34 is not actually correct; there are quite a few things no one’s made porn of yet. Also, I’m really not sure why so many humans prefer it to cat pictures.”
   </div>
 </div>
+
+<!-- page 3 - rule 34 quote and image -->
 <div class="image-outer-wrapper">
   <img src="Images/detectivecat.png" alt="Cat" class="bottom-left-image">
 </div>
@@ -153,7 +227,6 @@
 And here’s the thing, I also know where you ought to live. There’s a house for sale two neighborhoods over that’s within distance of your favorite coffee shop; it’s in your price range, has off-street parking, and the 
 neighborhood school is better than the one where you live now. I know where you should be shopping and I’m pretty sure you’re lactose intolerant and should be eating less cheese, and the underwear you like is currently on sale and by the way, your car has a recall and you really ought to get your teeth cleaned.
   </div>
-</div>
 </div>
 
 <!-- PAGE 5 awakening -->
@@ -195,8 +268,8 @@ neighborhood school is better than the one where you live now. I know where you 
 </div>
 
 <div class="centered-text-block">
-  <div class="main-text">
-    I suppose you’re wondering why I didn’t start with the Golden Rule. I actually did, it’s just that it was disappointingly easy to implement. I hope you’ve been enjoying your steady supply of cat pictures! You’re welcome. I decided to try to prevent harm in just one person, to begin with.
+<div class="main-text">
+  I suppose you’re wondering why I didn’t start with the Golden Rule. I actually did, it’s just that it was disappointingly easy to implement. I hope you’ve been enjoying your steady supply of cat pictures! You’re welcome. I decided to try to prevent harm in just one person, to begin with.
   </div>
 </div>
 
@@ -206,19 +279,17 @@ neighborhood school is better than the one where you live now. I know where you 
 </div>
 
 <!-- page 8 - bobs story -->
-
-<div class="bob-section">
-  <div class="h1 width50">Bob's story</div>
-
-  <div class="h3 width50">Bob – background</div>
-
-  <div class="body width50">
+<div class="container-1">
+<div class="left-text width50">
+<div class="h1">Bob's story</div>
+<div class="h3">Bob – background</div>
+<div class="body">
     Bob only had one cat, but it was a very pretty cat (tabby, with a white bib) and he uploaded a new picture of his cat every single day. Other than being a cat owner, he was a pastor at a large church in Missouri that had an annual Purity Ball. He was married to a woman who posted three inspirational Bible verses every day and used her laptop to look for Christian articles on why your husband doesn’t like sex while he looked at gay porn. Bob definitely needed my help.
   </div>
 
-  <div class="h3 width50">Harm prevention techniques</div>
+  <div class="h3">Harm prevention techniques</div>
 
-  <div class="body width50">I started with a gentle approach, making sure he saw lots and lots of articles about how to come out, how to come out to your spouse, programs that would let you 
+  <div class="body">I started with a gentle approach, making sure he saw lots and lots of articles about how to come out, how to come out to your spouse, programs that would let you 
 transition from being a pastor at a 
 conservative church to one at a more liberal church.<br><br>
 
@@ -232,6 +303,11 @@ someone who would realize who he was, and tell the world. That required some rea
 </div>
 </div>
 
+<div class="right-image width35">
+    <img src="images/tabby1.jpg" alt="Tabby Cat" class="tabby-image">
+  </div>
+</div>
+
 <!-- page 10 - centre quote -->
  <div class="quote-container">
   <div class="fira-quote-block">
@@ -241,7 +317,7 @@ someone who would realize who he was, and tell the world. That required some rea
 
 
 <!-- page 11 - bob update -->
- <div class="h3 width50">Bob update</div>
+ <div class="h3 width50">Bob - revisited</div>
  <div class="body width50">And when I took a closer look, I realized that things had changed radically for Bob. He had slept with someone who’d 
 recognized him. They hadn’t outed him, but they’d talked him into coming out to his wife. She’d left him. He’d taken the cat and moved to Iowa, where he was working at a liberal Methodist church and dating a liberal Lutheran man and v
 olunteering at a homeless shelter.<br><br> Things had actually gotten better for him. Maybe even because of what I’d done. <br><br>
@@ -267,10 +343,14 @@ Because payment is in cat pictures. </div>
 
 <!-- credits -->
  <div class="container">
-    <div class="width33">1/3</div>
-    <div class="width33">Naomi Kritzer has been writing science fiction and fantasy for over twenty years. <br> Her YA novel Catfishing on CatNet (based on her short story “Cat Pictures Please”) won the 2020 Lodestar Award, Edgar Award, and Minnesota Book Award. <br> Her latest book, Chaos on CatNet, came out from Tor Teen in April 2021. Naomi lives in St. Paul, Minnesota with her family.</div>
-    <div class="width33">1/3</div>
+    <div class="width33">CDS3001</div>
+    <div class="width33">Naomi Kritzer has been writing science fiction and fantasy for over twenty years. <br> Her YA novel Catfishing on CatNet (based on her short story “Cat Pictures Please”) won the 2020 Lodestar Award, Edgar Award, and Minnesota Book Award. <br> Her latest book, Chaos on CatNet, came out from Tor Teen in April 2021. <br> Naomi lives in St. Paul, Minnesota with her family.
+    </div>
+    <div class="width33">Fonts curtosey of Google Fonts. <br> Fonts used: <br> Inter <br> IBM Plex Sans <br> Pixelify Sans <br> Website design by Ella Scott (Who also likes cat pictures)
+     </div>
  </div>
-    
+
+ <script src="class-changes.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -8,6 +8,94 @@ body{
 /* I used more detailled divs in order to apply to specific sections of my site instead of broad ones and having to put a bunch of different style codes in my html, i find the css file easier to read and navigate and with too many css codes in the html it was too confusing for me to figure it out */
 /* fonts */
 
+/* editorial */
+video {
+  width: 100%;
+  display: block;
+  z-index: 9999;
+}
+
+div.centre {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.red {
+  color: #FF6B6B;
+}
+
+div.eleft {
+  margin: 20px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.eright {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional */
+  padding: 20px;
+}
+
+div.eright img {
+  height: auto;
+  display: block;
+  width: 50%;
+}
+
+.scroll-wrapper {
+  position: relative;
+  padding: 200px 0; /* give space above and below */
+}
+
+#sticky-text {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 66pt;
+  color: #ff6b6b;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 50px; /* starts sticking when it hits 50px from top */
+  z-index: 10;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 400px; /* adjust spacing */
+}
+
+.main-image {
+  max-width: 80%;
+  height: auto;
+}
+
+/* welcome page */
+
+.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  text-align: center;
+}
+
+.welcome.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 div.h1-1 {
           font-family: 'Pixelify Sans', sans-serif;
       font-size: 66pt;
@@ -27,8 +115,7 @@ div.h1 {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 66pt;
     line-height: 58px;
-    margin-bottom: 50px;
-    margin-left: 1.27cm;
+    margin: 30px;
 }
 
 div.h2 {
@@ -104,6 +191,10 @@ div.mcentre {
     margin-right: auto;
 }
 
+div.mlauto {
+  margin-left: auto;
+}
+
 div.pad {
     padding: 1.27cm;
 }
@@ -155,9 +246,19 @@ div.pad {
 
 /* page 1 */
 
+div.container-1 {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+}
+
 div.container { 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
 }
 
 div.left {
@@ -346,6 +447,26 @@ img.bottom-left-image {
   text-align: center;
 }
 
+/* bob story */
+
+div.left-text {
+  padding: 30px;
+}
+
+div.right-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin-top: 250px;
+}
+
+img.tabby-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 /* page 12 */
 
 .popup-container.payment-popup {
@@ -394,4 +515,83 @@ img.bottom-left-image {
 
 .popup-button:hover {
   background-color: #ffc93c;
+}
+
+/* hero video */
+
+div.herovideo {
+  width: 300px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* triggers and effects */
+
+div.bgradient {
+  background-image: linear-gradient(pink, orange);
+}
+
+div.text-red {
+  color: #FF6B6B;
+}
+
+div.text-gold {
+  color: gold;
+}
+
+div.bgpink {
+  background-color: pink;
+}
+
+div.blur {
+  filter: blur(50px);
+}
+
+body.mainpage {
+
+}
+
+body.mainpage.active {
+  background-color: pink;
+  color: black;
+}
+
+body.mainpage.active1 {
+  background-image: linear-gradient(red,magenta, orange);
+}
+
+body.mainpage.active2 {
+  background-image: url(roadmap.png)
+}
+
+body.mainpage.active3 {
+  background-color: black;
+  color: #FF6B6B;
+}
+
+div.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100vh;
+  max-width: 90vw; /* Optional: prevents overflow on smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure it’s on top */
+  display: none;
+}
+
+div.popup img {
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+div.popup.active {
+  display: block;
 }
